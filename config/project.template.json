@@ -1,0 +1,33 @@
+{
+  "backend": {
+    "databaseUrl": "postgresql+asyncpg://fadia:fadia_dev_password@127.0.0.1:5432/fadia",
+    "databasePoolSize": 10,
+    "databaseMaxOverflow": 20,
+    "databasePoolRecycleSeconds": 1800
+  },
+  "objectStorage": {
+    "endpoint": "http://127.0.0.1:9000",
+    "accessKey": "minioadmin",
+    "secretKey": "minioadmin",
+    "bucket": "fadia-documents",
+    "region": "us-east-1"
+  },
+  "llm": {
+    "apiKey": "",
+    "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "chatModel": "",
+    "embeddingModel": "",
+    "embeddingDimensions": 1024,
+    "rerankModel": "qwen3-vl-rerank",
+    "rerankUrl": "https://dashscope.aliyuncs.com/api/v1/services/rerank/text-rerank/text-rerank",
+    "temperature": 0.2,
+    "timeoutSeconds": 120,
+    "maxRetries": 2,
+    "modelCapabilities": {}
+  },
+  "vectorStore": {
+    "searchParams": {
+      "ef": 64
+    }
+  }
+}

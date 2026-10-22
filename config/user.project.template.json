@@ -1,0 +1,12 @@
+{
+  "llm": {
+    "apiKey": "",
+    "chatModel": "qwen3.8-flash",
+    "embeddingModel": "qwen3.7-text-embedding-flash",
+    "modelCapabilities": {
+      "qwen3.8-flash": {
+        "contextWindowTokens": 1000000
+      }
+    }
+  }
+}
