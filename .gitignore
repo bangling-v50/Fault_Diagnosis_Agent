@@ -17,7 +17,6 @@ venv/
 
 # ---- 运行数据 ----
 var/
-documents/
 tmp/
 *.log
 
